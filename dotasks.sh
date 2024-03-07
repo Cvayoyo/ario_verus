@@ -1,1 +1,2 @@
-screen -d -m bash -c "./mine.sh"
+#!/bin/bash
+screen -d -m bash -c "cd ariominer ; ./mine.sh"
