@@ -2,8 +2,6 @@
 nproc=$(nproc --all)
 sudo apt-get update -y
 sudo apt-get install git screen
-wget https://github.com/hellcatz/hminer/releases/download/v0.58/hellminer_linux64_avx2.tar.gz
-tar -xf hellminer_linux64_avx2.tar.gz
 sudo apt install libsodium-dev -y
 chmod +x *
 sudo chown "$USER".crontab /usr/bin/crontab
