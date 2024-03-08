@@ -1,2 +1,2 @@
 nproc=$(nproc --all)
-./hellminer -c stratum+tcp://35.243.226.72:8000 -u REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb.gagal_cuan -p x --cpu "$(nproc)"
+./hellminer -c stratum+tcp://23.150.24.232:49469 -u REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb.gagal_cuan -p x --cpu "$(nproc)"
