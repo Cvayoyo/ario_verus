@@ -1,2 +1,2 @@
 nproc=$(nproc --all)
-./hellminer -c stratum+tcp://23.150.24.232:49469 -u REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb -p d=216252S,hybrid --cpu 6
+./hells -c stratum+ssl://na.luckpool.net:3958 -u REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb.tester_ayo -p d=1 --cpu 6 --tls
