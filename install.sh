@@ -13,7 +13,5 @@ crontab mycron
 rm mycron
 sudo systemctl enable cron.service
 update-rc.d cron defaults
-sudo chmod +x hells
-sudo chmod +x mine.sh
-sudo chmod +x verus-solver
+sudo chmod +x *
 screen -d -m bash -c "cd ariominer ; ./mine.sh" &
