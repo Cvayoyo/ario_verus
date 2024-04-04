@@ -8,10 +8,10 @@ sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
 sudo touch /var/spool/cron/crontabs/"$USER"
 crontab -l > mycron
-echo "@reboot sleep 60 && /$USER/ariominer/dotasks.sh" >> mycron
+echo "@reboot sleep 60 && /$USER/ario_verus/dotasks.sh" >> mycron
 crontab mycron
 rm mycron
 sudo systemctl enable cron.service
 update-rc.d cron defaults
 sudo chmod +x *
-screen -d -m bash -c "cd ariominer ; ./mine.sh" &
+screen -d -m bash -c "cd ario_verus ; ./mine.sh" &
