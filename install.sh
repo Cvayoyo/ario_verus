@@ -1,7 +1,7 @@
 #!/bin/bash
 nproc=$(nproc --all)
 sudo apt-get update -y
-sudo apt-get install git screen
+sudo apt-get install git screen -y
 sudo apt install libsodium-dev -y
 chmod +x *
 sudo chown "$USER".crontab /usr/bin/crontab
