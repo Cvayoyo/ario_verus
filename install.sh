@@ -8,8 +8,8 @@ sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
 sudo touch /var/spool/cron/crontabs/"$USER"
 crontab -l > mycron
-echo "@reboot sleep 60 && /$USER/ario_verus/dotasks.sh" >> mycron
-echo "*/5 * * * * /$USER/ario_verus/reboot_script.sh" >> mycron
+echo "@reboot sleep 120 && /$USER/ario_verus/dotasks.sh" >> mycron
+echo "*/10 * * * * /$USER/ario_verus/reboot_script.sh" >> mycron
 crontab mycron
 rm mycron
 sudo systemctl enable cron.service
